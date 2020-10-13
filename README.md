@@ -1,1 +1,1 @@
-# prome-graphql-js
+# prom-graphql
