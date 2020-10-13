@@ -1,1 +1,1 @@
-# prom-graphql
+# Prom-GraphQL
