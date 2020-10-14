@@ -1,0 +1,28 @@
+{
+  "name": "prome-graphql-js",
+  "version": "1.0.0",
+  "description": "A GraphQL JS Wrapper for the Prometheus REST API",
+  "license": "MIT",
+  "author": "Carlos Zimmerle <carloszimmerle@gmail.com> (github.com/carloszimm)",
+  "main": "./lib",
+  "homepage": "https://github.com/carloszimm/prome-graphql-js#readme",
+  "bugs": {
+    "url": "https://github.com/carloszimm/prome-graphql-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloszimm/prome-graphql-js.git"
+  },
+  "keywords": ["graphql", "prometheus", "graphql-api"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "form-urlencoded": "^4.2.1",
+    "graphql-tools": "^6.2.3",
+    "lodash": "^4.17.20",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+  }
+}
