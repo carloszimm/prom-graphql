@@ -5,13 +5,13 @@
   "license": "MIT",
   "author": "Carlos Zimmerle <carloszimmerle@gmail.com> (github.com/carloszimm)",
   "main": "./lib",
-  "homepage": "https://github.com/carloszimm/prome-graphql-js#readme",
+  "homepage": "https://github.com/carloszimm/prom-graphql#readme",
   "bugs": {
-    "url": "https://github.com/carloszimm/prome-graphql-js/issues"
+    "url": "https://github.com/carloszimm/prom-graphql/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carloszimm/prome-graphql-js.git"
+    "url": "git+https://github.com/carloszimm/prom-graphql.git"
   },
   "keywords": ["graphql", "prometheus", "graphql-api"],
   "scripts": {
