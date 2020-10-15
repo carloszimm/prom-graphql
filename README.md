@@ -1,4 +1,6 @@
 # Prom-GraphQL
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This is an open source GraphQL wrapper for the [Prometheus REST API](https://prometheus.io/docs/prometheus/latest/querying/api/).
 
 ## Usage
@@ -25,7 +27,9 @@ const { schema, typeDefs, resolvers } = require('prom-graphql')('http://promethe
 
 ## Types Definition
 
-All the available operations are wrapped in a top level type called prometheus. Every operation in the prometheus type has been modelled as close as possible to the descriptions available in the [Prometheus REST docs](https://prometheus.io/docs/prometheus/latest/querying/api/) and in the [source code](https://github.com/prometheus/prometheus/blob/master/promql/value.go) as well. For example, the prometheus type has a field called query (just like the REST endpoint) that, when issued in a query(pun intended), executes an **instant query**; this operation receives the same set of arguments (with the same nomenclature) described in the Prometheus docs.
+All the available operations are wrapped in a top level type called prometheus. Every operation in the prometheus type has been modelled as close as possible to the descriptions available in the [Prometheus REST docs](https://prometheus.io/docs/prometheus/latest/querying/api/) and in the [source code](https://github.com/prometheus/prometheus/blob/master/promql/value.go) as well. For example, the prometheus type has a field called query (just like the REST endpoint) that, when issued in a query(pun intended), executes an **instant query**; this operation receives the same set of arguments (with the same nomenclature) described in the Prometheus docs. The image bellow shows an example of an **instant query** being used to query the *container_memory_usage_bytes* metric in that specific moment; note that an inline fragment was needed inside the data field since the result can be of types: Scalar, String, Vector, or Matrix (following Prometheus result types); also, since every type in the schema implements a common interface, the **resultType** field can be used outside the inline fragment.  
+
+![GraphiQL_1](https://user-images.githubusercontent.com/4553211/96196434-b6340080-0f25-11eb-9d06-82310d441eab.png)
 
 Due to GraphQL's type system, some adaptations had to be made. For example, every metric result in an instant/range query carries an attribute called \_\_name\_\_ that denotes the name of the metric. Unfortunately, GraphQL doesn't allow identifiers starting with \_\_, so **\_\_name\_\_** is just **name**. Also, since each metric may have an undefined number of labels+values, each label/value is represented with a type, and each metric can have an array of those types.
 
