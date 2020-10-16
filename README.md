@@ -1,5 +1,6 @@
 # Prom-GraphQL
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Language: JavaScript](https://img.shields.io/static/v1?label=language&message=javascript&color=yellow&style=flat)
+[![License: MIT](https://img.shields.io/github/license/carloszimm/prom-graphql)](https://opensource.org/licenses/MIT)
 
 This is an open source GraphQL wrapper for the [Prometheus REST API](https://prometheus.io/docs/prometheus/latest/querying/api/).
 
