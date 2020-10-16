@@ -3,6 +3,9 @@
 
 This is an open source GraphQL wrapper for the [Prometheus REST API](https://prometheus.io/docs/prometheus/latest/querying/api/).
 
+## Installation (soon)
+    npm install prom-graphql
+
 ## Usage
 This module exports an executable schema (built with [graphql-tools](https://www.graphql-tools.com/)) that can be used either with the graphql or express-graphql to contruct a graphql server. The module, when required, brings a factory function that accepts an optional **base** URL (the URL of the Prometheus service). If not supplied, the prometheus base query will require an argument to be passed informing the URL of the service. The following snippet demostrates a simple use of the module (passing a pseudo URL) with the express-graphql.
 
