@@ -1,5 +1,5 @@
 {
-  "name": "prome-graphql-js",
+  "name": "prom-graphql",
   "version": "1.0.0",
   "description": "A GraphQL JS Wrapper for the Prometheus REST API",
   "license": "MIT",
